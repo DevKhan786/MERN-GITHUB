@@ -17,7 +17,7 @@ interface RepoType {
     | "Csharp"
     | "Go"
     | "HTML"
-    | "CSS"; 
+    | "CSS";
   html_url: string;
   created_at: string;
   clone_url: string;
@@ -25,6 +25,7 @@ interface RepoType {
 
 interface ReposProps {
   repos: RepoType[]; // Array of repo objects
+  alwaysFullWidth?: boolean;
 }
 
 const Repos: React.FC<ReposProps> = ({ repos }) => {
