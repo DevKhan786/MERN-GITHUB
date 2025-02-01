@@ -20,6 +20,7 @@ interface RepoType {
     | "CSS"; 
   html_url: string;
   created_at: string;
+  clone_url: string;
 }
 
 interface ReposProps {
