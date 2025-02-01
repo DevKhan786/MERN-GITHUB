@@ -49,7 +49,10 @@ const Repo: React.FC<RepoProps> = ({ repo }) => {
         <span className="bg-purple-100 text-purple-800 text-xs sm:text-sm font-medium px-1 py-0.5 rounded-full flex items-center gap-1">
           <FaCodeFork /> {repo.forks_count}
         </span>
-        <span className="cursor-pointer bg-green-100 text-green-800 text-xs sm:text-sm font-medium px-1 py-0.5 rounded-full flex items-center gap-1">
+        <span
+          onClick={() => handleCloneClick(repo)}
+          className="cursor-pointer bg-green-100 text-green-800 text-xs sm:text-sm font-medium px-1 py-0.5 rounded-full flex items-center gap-1"
+        >
           <FaCopy /> Clone
         </span>
       </div>
